@@ -2,7 +2,7 @@
   text-align: center;
 }
 .header-logo, h1 , .header-link, .register-bottun, .login-buttun{
-  display: inline-block;
+  display: block;
 }
 .header-link{
   text-align: right;

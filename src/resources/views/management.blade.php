@@ -21,7 +21,7 @@
          <select class="search-form__item-select" name="category_id">
          <option value="">カテゴリ</option>
            @foreach ($categories as $category)
-           <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>
+           <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
            @endforeach
         </select>
     </div>
