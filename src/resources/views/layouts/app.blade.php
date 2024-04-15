@@ -12,7 +12,7 @@
   <header class="header">
     <div class="header-inner">
       <div class="header-logo">
-        <h1>FashionabiblyLate</h1>
+        <h1>FashionablyLate</h1>
       </div>
       <div class="header-link">
         @yield('header-link')
@@ -20,7 +20,7 @@
     </div>
   </header>
   <main>
-    @yieid('content')
+  @yield('content')
   </main>
 
 </body>

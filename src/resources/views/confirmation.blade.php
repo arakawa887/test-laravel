@@ -10,7 +10,7 @@
     <h1>Contact</h1>
   </div>
   
-  <form class="form__confirm" action="" method="post">
+  <form class="form__confirm" action="/confirm" method="post">
     @csrf
     <div class="confirm-table">
       <table class="confirm-table__inner">
@@ -36,13 +36,13 @@
         <tr class="confirm-table_row">
         <th class="confirm-table__header">電話番号</th>
         <td class="confirm-table__text">
-        <input type="text" name="tel" value="{{ $contact['tel'] }}" readonly />
+        <input type="text" name="tel" value="{{ $contact['tell'] }}" readonly />
         </td>
         </tr>
         <tr class="confirm-table_row">
         <th class="confirm-table__header">住所</th>
         <td class="confirm-table__text">
-        <input type="text" name="adress" value="{{ $contact['adress'] }}" readonly />
+        <input type="text" name="adress" value="{{ $contact['address'] }}" readonly />
         </td>
         </tr>
         <tr class="confirm-table_row">
@@ -54,7 +54,7 @@
         <tr class="confirm-table_row">
         <th class="confirm-table__header">お問い合わせの種類</th>
         <td class="confirm-table__text">
-        <input type="text" name="content" value="{{ $contact['category_id'] }}" readonly />
+        <input type="text" name="content" value="{{ $category['content'] }}" readonly />
         </td>
         </tr>
         <tr class="confirm-table_row">
@@ -65,6 +65,10 @@
         </tr>
       </table>
     </div>
+    <button class="login-form__button-submit" type="submit">送信</button>
+  </form>
+  <form action="/" method="get">
+  <button class="login-form__button-submit" type="submit">修正</button>
   </form>
 </div>
 @endsection

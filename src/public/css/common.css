@@ -1,0 +1,12 @@
+.header-logo{
+  text-align: center;
+}
+.header-logo, h1 , .header-link, .register-bottun, .login-buttun{
+  display: inline-block;
+}
+.header-link{
+  text-align: right;
+  margin: 40px;
+  border: solid 1px;
+  border-color: brawn;
+}

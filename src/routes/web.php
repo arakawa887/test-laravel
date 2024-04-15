@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [TestController::class,'index']);
+Route::post('/',[TestController::class,'confirm']);
+Route::post('/confirm',[TestController::class,'store']);
+Route::get('/register', [TestController::class,'register']);
+Route::middleware('auth')->group(function () {
+Route::get('/admin', [TestController::class, 'admin']);
 });
+Route::get('/login',[TestController::class,'login']);
